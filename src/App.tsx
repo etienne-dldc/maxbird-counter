@@ -1,8 +1,11 @@
 import React from 'react';
 import { data } from './data';
 
+const INITIAL_STATE =
+  process.env.NODE_ENV === 'development' ? '17, 18, 24, 25, 37, 49, 50, 52, 58, 59, 60, 67, 79, 92, 98' : '';
+
 const App: React.FC = () => {
-  const [input, setInput] = React.useState<string>('17, 18, 24, 25, 37, 49, 50, 52, 58, 59, 60, 67, 79, 92, 98');
+  const [input, setInput] = React.useState<string>(INITIAL_STATE);
 
   const nums = input
     .split(/\D+/g)
