@@ -108,3 +108,11 @@ p {
 .source {
   margin-bottom: 4rem;
 }
+
+.name {
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  font-family: 'Faune';
+  flex: 1;
+  color: #263238;
+}

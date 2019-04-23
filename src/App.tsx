@@ -21,6 +21,8 @@ const App: React.FC = () => {
     return acc + (item.captured ? item.points : 0);
   }, 0);
 
+  const list = matching.length === 0 ? data : matching;
+
   return (
     <div className="App">
       <h1>Expedition Max Bird - Point counter</h1>
@@ -44,7 +46,7 @@ const App: React.FC = () => {
         Score: <span className="points">{total} points</span>
       </div>
       <div className="items">
-        {matching.map((piaf, index) => {
+        {list.map((piaf, index) => {
           if (!piaf) {
             return (
               <div className="item" key={index}>
@@ -59,6 +61,7 @@ const App: React.FC = () => {
               style={{ background: piaf.captured ? '#E0E0E0' : 'white', opacity: piaf.captured ? 1 : 0.5 }}
             >
               <span className="num">{piaf.num}</span>
+              <span className="name">{piaf.name}</span>
               <span className="points">{piaf.points} points</span>
             </div>
           );
