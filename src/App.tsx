@@ -21,6 +21,9 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <h1>Expedition Max Bird - Point counter</h1>
+      <p className="source">
+        Sources : <a href="https://github.com/etienne-dldc/maxbird-counter">etienne-dldc/maxbird-counter</a>
+      </p>
       <p>Entrez vos numéros:</p>
       <input placeholder="17, 18, 24..." value={input} onChange={e => setInput(e.target.value)} />
       <p>

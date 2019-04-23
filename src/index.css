@@ -16,7 +16,7 @@ code {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
+  max-width: 750px;
   margin: auto;
   padding-bottom: 20px;
 }
@@ -103,4 +103,8 @@ p {
   display: flex;
   flex-direction: row;
   margin: 1rem;
+}
+
+.source {
+  margin-bottom: 4rem;
 }
