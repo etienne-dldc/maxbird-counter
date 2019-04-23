@@ -20,9 +20,8 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <div>
-        <input placeholder="17, 18, 24..." value={input} onChange={e => setInput(e.target.value)} />
-      </div>
+      <input placeholder="17, 18, 24..." value={input} onChange={e => setInput(e.target.value)} />
+      <div>{nums.length} numéros</div>
       <div>{nums.join(' - ')}</div>
       <div>
         {matching.map((piaf, index) => {
